@@ -1,0 +1,30 @@
+@import '../../common/colors';
+.header{
+  position: relative;
+  height: 70px;
+  background-color: $secondary-color;
+  padding: 0 40px;
+  align-items: center;
+  justify-content: space-between;
+  display: grid;
+  grid-area: header;
+  &
+  logo{
+
+  }
+}
+.userImage, .userImage img {
+  width: 38px;
+  height: 38px;
+
+}
+.burgerMenu{
+  position: absolute;
+  left: 1035px;
+  top: 10px;
+  z-index: 2;
+}
+.menu{
+  position: absolute;
+
+}
