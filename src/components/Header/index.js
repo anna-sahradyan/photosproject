@@ -1,41 +1,25 @@
 import React from 'react';
 import s from './Header.module.scss';
-import { Nav, Navbar, NavDropdown } from "react-bootstrap";
+import {ButtonGroup, Dropdown} from "react-bootstrap";
 
 
 const Header = () => {
     return (
         <>
             <header className={s.header}>
-                <Navbar collapseOnSelect expand="lg"  variant="dark" className={s.burgerMenu}>
-                    <Navbar.Brand href="#home">
-                    </Navbar.Brand>
-                    <img src='/images/menu.png'alt="menu" className={s.menu}/>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="mr-auto">
-                            <NavDropdown  id="collasible-nav-dropdown">
+                <Dropdown as={ButtonGroup} className={s.burgerMenu}>
+                    <Dropdown.Toggle split variant="outline-dark" id="dropdown-split-basic"><img src='/images/menu.png'alt="menu" className={s.menu}/></Dropdown.Toggle>/>
 
-                                <NavDropdown.Item href="#action/3.2">
-                                    <div className={s.userImage}>Anna
-                                        <img src='/images/userWoman.png' alt="user"/>
-                                    </div>
-                                </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.3">a.sahradyan72@gmail.com</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.3">About Me</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#/"> Gallery
-                                </NavDropdown.Item>
-                            </NavDropdown>
-                        </Nav>
+                    <Dropdown.Menu>
+                        <Dropdown.Item href="#/action-1"> <div className={s.userImage}>Anna
+                            <img src='/images/userWoman.png' alt="user"/>
+                        </div></Dropdown.Item>
+                        <Dropdown.Item href="#action/2.2">a.sahradyan72@gmail.com</Dropdown.Item>
+                        <Dropdown.Item href="/about">About</Dropdown.Item>
+                        <Dropdown.Item href="/">Gallery</Dropdown.Item>
 
-                    </Navbar.Collapse>
-                </Navbar>
-
-
-
+                    </Dropdown.Menu>
+                </Dropdown>
             </header>
         </>
     );

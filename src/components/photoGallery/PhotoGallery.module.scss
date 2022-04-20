@@ -17,3 +17,11 @@
   margin-left: 300px;
   margin-top:-10px ;
 }
+.btn{
+  position: absolute;
+  transform: translate(2%,-180px);
+  opacity: 0;
+}
+ .btn:hover{
+  opacity: 1;
+}

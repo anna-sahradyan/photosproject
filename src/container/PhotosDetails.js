@@ -3,10 +3,11 @@ import {Link, useParams} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {fetchPhotosId, removeList, selectPhotosId} from "../store/photosSlice";
 import s from './Gallery.module.scss';
-import Loading from "../Loading";
+import Loading from "../components/Loading";
 import {Card,Button} from 'react-bootstrap';
 
 const PhotosDetails = () => {
+
     let {photoId} = useParams();
     const dispatch = useDispatch();
     const photo = useSelector(selectPhotosId);
@@ -18,7 +19,6 @@ const PhotosDetails = () => {
    Object.values(photo).map((item) => {
         return img = item.urls.small, description = item.description,author = item.user.name ,user=item.user.bio
     })
-
 
     useEffect(() => {
         if(photoId &&photoId){
@@ -38,7 +38,7 @@ const PhotosDetails = () => {
         if (!status) {
             setTimeout(() => {
                 setIsLoading(false)
-            }, 5000)
+            }, 2000)
         }
     }, [status])
     return (

@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import {Route, Routes} from "react-router-dom";
 import PhotosDetails from "./container/PhotosDetails";
+import About from "./components/About";
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
                     <Routes>
                         <Route path={'/'} element={<Main/>}/>
                         <Route path={'/photo/:photoId'} element={<PhotosDetails/>}/>
+                        <Route path={'/about'} element={<About/>}/>
                     </Routes>
                 </div>
             </div>

@@ -1,0 +1,26 @@
+@import '../../common/colors';
+
+.contentDiv {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+
+}
+
+.content {
+  position: relative;
+  width: 1300px;
+  margin: auto;
+  height: auto;
+  //border: 1px solid white;
+}
+.card{
+ position: absolute;
+transform: translate(50%,10%);
+}
+.btn{
+  position: absolute;
+  transform: translate(110%,750%);
+}
+

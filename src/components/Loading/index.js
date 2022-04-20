@@ -5,7 +5,9 @@ const Loading = () => {
     return (
         <>
             <div>
-                <Loader.Audio
+                <Loader.Watch
+                    height={100}
+                    width={100}
                 />
             </div>
         </>
