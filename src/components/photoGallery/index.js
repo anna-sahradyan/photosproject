@@ -5,7 +5,6 @@ import {Button} from "react-bootstrap";
 import {Link, useLocation} from "react-router-dom";
 
 const PhotoGallery = (props) => {
-    const location = useLocation();
     return (<>
 
         <motion.div className={s.card} whileHover={{scale: 1.03}}>

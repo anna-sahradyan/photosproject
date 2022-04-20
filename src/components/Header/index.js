@@ -15,7 +15,7 @@ const Header = () => {
                             <img src='/images/userWoman.png' alt="user"/>
                         </div></Dropdown.Item>
                         <Dropdown.Item href="#action/2.2">a.sahradyan72@gmail.com</Dropdown.Item>
-                        <Dropdown.Item href="/about">About</Dropdown.Item>
+                        <Dropdown.Item href="/about">About Me</Dropdown.Item>
                         <Dropdown.Item href="/">Gallery</Dropdown.Item>
 
                     </Dropdown.Menu>
